@@ -3,6 +3,8 @@
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 
+import StaggeredMenu from '@/components/staggered-menu';
+
 export default function HeroSection() {
   const [isLoading, setIsLoading] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -87,7 +89,7 @@ export default function HeroSection() {
 
         {/* Hero Content */}
         <div
-          className={`absolute bottom-0 left-0 w-full md:w-3/4 p-8 md:p-16 flex flex-col items-start justify-end text-left transition-all duration-1000 delay-500 z-20 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          className={`absolute bottom-12 left-0 w-full md:w-3/4 p-8 md:p-16 flex flex-col items-start justify-end text-left transition-all duration-1000 delay-500 z-20 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
         >
           <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
@@ -100,60 +102,40 @@ export default function HeroSection() {
       </div>
 
       {/* Navbar */}
-      <div
-        className={`left-1/2 -translate-x-1/2 flex justify-between items-center transition-all duration-500 ease-out z-50 ${showContent ? 'translate-y-0 opacity-100' : '-translate-y-32 opacity-0'
-          } ${isScrolled
-            ? 'fixed top-4 w-[calc(100%-4rem)] bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl pl-4 pr-12 py-2'
-            : 'absolute top-8 w-[calc(100%-8rem)] bg-transparent'
-          }`}
-      >
-        {/* Logo Container */}
-        <div
-          className={`transition-all duration-500 ease-out ${!isScrolled
-            ? 'bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl px-3 py-1.5'
-            : ''
-            }`}
-        >
-          <div className="relative h-10 md:h-14 w-auto">
-            <Image
-              src="/exim-logo.png"
-              alt="Exim Logo"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-auto h-full"
-            />
-          </div>
-        </div>
-
-        {/* Nav Container */}
-        <div
-          className={`transition-all duration-500 ease-out ${!isScrolled
-            ? 'bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl px-8 py-2'
-            : ''
-            }`}
-        >
-          <nav className="hidden md:flex items-center gap-8 text-slate-800 text-sm font-medium tracking-wide">
-            {['Home', 'About', 'Services'].map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="hover:text-blue-600 transition-colors uppercase"
-              >
-                {item}
-              </a>
-            ))}
-            <a
-              href="#contact"
-              className="relative overflow-hidden bg-gradient-to-br from-amber-700 to-amber-900 text-white px-6 py-2.5 rounded-xl hover:from-amber-800 hover:to-amber-950 transition-all duration-300 uppercase shadow-md group"
-            >
-              {/* Wood Texture Effect Overlay */}
-              <div className="absolute inset-0 bg-[url('/wood-pattern.png')] bg-cover bg-center opacity-40 mix-blend-overlay" />
-              <span className="relative z-10">Contact</span>
-            </a>
-          </nav>
-        </div>
+      <div className={`transition-all duration-1000 ${showContent ? 'opacity-100' : 'opacity-0'}`}>
+        <StaggeredMenu
+          position="right"
+          items={[
+            { label: 'Home', ariaLabel: 'Go to home page', link: '/#home' },
+            { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
+            {
+              label: 'Services',
+              ariaLabel: 'View our services',
+              link: '/#services',
+              children: [
+                { label: 'Timber & Manufacturing', ariaLabel: 'Timber services', link: '/services/timber-industrial-manufacturing' },
+                { label: 'Furniture Supply', ariaLabel: 'Furniture services', link: '/services/furniture-manufacturing-supply' },
+                { label: 'Hospitality Linen', ariaLabel: 'Linen services', link: '/services/hospitality-linen-resort-supplies' },
+                { label: 'Outdoor Solutions', ariaLabel: 'Outdoor services', link: '/services/outdoor-architectural-solutions' },
+                { label: 'Oil & Gas', ariaLabel: 'Oil and gas services', link: '/services/oil-gas' },
+              ]
+            },
+            { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' }
+          ]}
+          socialItems={[
+            { label: 'Facebook', link: '#' },
+            { label: 'LinkedIn', link: '#' },
+            { label: 'Instagram', link: '#' }
+          ]}
+          displaySocials
+          displayItemNumbering={true}
+          menuButtonColor="#000000"
+          openMenuButtonColor="#FFFFFF"
+          changeMenuColorOnOpen={true}
+          logoUrl="/exim-logo.png"
+        />
       </div>
+
     </section>
   );
 }

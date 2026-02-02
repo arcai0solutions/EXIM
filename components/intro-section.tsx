@@ -39,10 +39,14 @@ export default function IntroSection() {
 
                             <Link
                                 href="/about"
-                                className="inline-flex items-center gap-2 px-8 py-4 bg-[#1a0f3a] text-white rounded-full hover:bg-opacity-90 transition-all hover:gap-3 group"
+                                className="relative inline-flex items-center gap-2 px-8 py-4 text-white rounded-full hover:scale-[1.02] transition-all hover:gap-3 group overflow-hidden shadow-lg hover:shadow-xl"
                             >
-                                About Us
-                                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                                {/* Wood texture background */}
+                                <span className="absolute inset-0 bg-amber-800" />
+                                <span className="absolute inset-0 bg-[url('/wood-pattern.png')] bg-cover bg-center opacity-50 mix-blend-overlay" />
+                                <span className="absolute inset-0 bg-gradient-to-r from-black/10 to-black/20" />
+                                <span className="relative z-10">About Us</span>
+                                <ArrowRight className="relative z-10 w-4 h-4 transition-transform group-hover:translate-x-1" />
                             </Link>
                         </motion.div>
                     </div>
