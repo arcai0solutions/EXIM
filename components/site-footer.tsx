@@ -99,14 +99,14 @@ export function SiteFooter() {
                     <div className="flex items-center gap-4">
                         <div className="flex items-center gap-2">
                             <span>Made by</span>
-                            <img
-                                src="/arc logo.png"
-                                alt="ARC AI Logo"
-                                className="h-8 w-auto object-contain"
-                            />
+                            <a href="https://www.arcai.agency" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="/arc logo.png"
+                                    alt="ARC AI Logo"
+                                    className="h-8 w-auto object-contain hover:opacity-80 transition-opacity"
+                                />
+                            </a>
                         </div>
-                        <span className="hidden h-1 w-1 rounded-full bg-white/20 sm:block" />
-                        <Link href="/admin/login" className="hover:text-amber-400 transition-colors">Admin Login</Link>
                     </div>
                 </div>
             </div>
