@@ -453,10 +453,10 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                 </div>
 
                 <header
-                    className={`staggered-menu-header absolute left-0 right-0 w-full flex justify-center pointer-events-none z-20 transition-all duration-500 ease-in-out ${isScrolled ? 'top-6 px-4' : 'top-0 p-4'}`}
+                    className={`staggered-menu-header absolute left-0 right-0 w-full flex justify-center pointer-events-none z-20 transition-all duration-500 ease-in-out ${isScrolled ? 'top-0 md:top-6 px-0 md:px-4' : 'top-0 p-4'}`}
                     aria-label="Main navigation header"
                 >
-                    <div className={`flex items-center justify-between w-full pointer-events-none mx-auto transition-all duration-500 ${isScrolled ? `rounded-2xl py-3 px-8 pointer-events-auto bg-white/95 backdrop-blur-md ${open ? '' : 'shadow-lg'}` : 'px-8 py-6 bg-transparent pointer-events-none'}`}>
+                    <div className={`flex items-center justify-between w-full pointer-events-none mx-auto transition-all duration-500 ${isScrolled ? `rounded-none md:rounded-2xl py-3 px-4 md:px-8 pointer-events-auto bg-white/95 backdrop-blur-md ${open ? '' : 'shadow-lg'}` : 'px-4 md:px-8 py-6 bg-transparent pointer-events-none'}`}>
                         <div className={`sm-logo flex items-center select-none pointer-events-auto transition-all duration-500 ${isScrolled ? 'bg-transparent pl-2' : 'bg-white/95 backdrop-blur-sm rounded-lg shadow-lg px-1 py-1'}`} aria-label="Logo">
                             <Link href="/" className="block">
                                 <img
@@ -471,7 +471,8 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                         </div>
 
                         <div
-                            className={`rounded-full px-5 py-2 pointer-events-auto flex items-center transition-all duration-500 ${open ? 'bg-[#3E2723] shadow-lg' : (isScrolled ? 'bg-transparent' : 'bg-white/95 shadow-lg backdrop-blur-sm rounded-xl px-6 py-3')}`}
+                            onClick={toggleMenu}
+                            className={`rounded-full px-2 md:px-5 py-2 cursor-pointer pointer-events-auto flex items-center transition-all duration-500 ${open ? 'bg-[#3E2723] shadow-lg' : (isScrolled ? 'bg-transparent' : 'bg-white/95 shadow-lg backdrop-blur-sm rounded-xl px-3 md:px-6 py-3')}`}
                         >
                             <button
                                 ref={toggleBtnRef}
@@ -480,7 +481,6 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                                 aria-label={open ? 'Close menu' : 'Open menu'}
                                 aria-expanded={open}
                                 aria-controls="staggered-menu-panel"
-                                onClick={toggleMenu}
                                 type="button"
                             >
                                 <span

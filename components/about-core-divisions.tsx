@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 const divisions = [
     {
         title: 'Timber & Industrial Manufacturing',
-        description: 'Sustainable sourcing and engineered timber including New Zealand pine and Southeast Asian hardwoods.'
+        description: 'Sustainable partner network and engineered timber including New Zealand pine and certified premium hardwoods.'
     },
     {
         title: 'Furniture Manufacturing & Supply',
-        description: 'Indoor and outdoor solutions for hospitality, commercial, and residential projects across Asia.'
+        description: 'Indoor and outdoor solutions for hospitality, commercial, and residential projects globally.'
     },
     {
         title: 'Hospitality Linen & Resort Supplies',
@@ -35,7 +35,7 @@ export default function AboutCoreDivisions() {
                     </span>
                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Core Divisions</h2>
                     <p className="text-slate-600">
-                        Structured around five principal verticals reflecting long-term demand and asset-backed capabilities.
+                        Structured around core divisions reflecting long-term demand and asset-backed capabilities.
                     </p>
                 </div>
 
@@ -51,7 +51,7 @@ export default function AboutCoreDivisions() {
                         >
                             <div className="flex items-start gap-4">
                                 <div className="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center shrink-0 text-amber-700 font-bold">
-                                    {idx + 1}
+                                    <div className="w-2 h-2 rounded-full bg-amber-700" />
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-amber-800 transition-colors">

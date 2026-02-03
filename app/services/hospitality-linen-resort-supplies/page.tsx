@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Hospitality Linen & Resort Supplies | EXIM Corporation',
-    description: 'Premium hospitality linen and resort supplies through trusted partner textile manufacturers. Serving luxury properties in Maldives and Indian Ocean.',
+    description: 'Premium hospitality linen and resort supplies through trusted partner textile manufacturers. Serving luxury properties globally.',
     keywords: ['Hospitality Linen', 'Resort Supplies', 'Hotel Bedding', 'Luxury Towels', 'Bath Linen', 'Resort Textiles', 'Maldives', 'Mauritius', 'Seychelles', 'Sri Lanka', 'Middle East', 'Saudi', 'UAE', 'Israel']
 };
 

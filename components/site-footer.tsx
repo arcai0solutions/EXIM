@@ -34,7 +34,7 @@ export function SiteFooter() {
                             </div>
                         </Link>
                         <p className="max-w-md text-sm leading-relaxed text-white/90">
-                            EXIM Corporation (Pvt) Ltd is a diversified Sri Lankan-origin enterprise with deep-rooted expertise across industrial manufacturing, global sourcing, and strategic supply solutions.
+                            EXIM Corporation (Pvt) Ltd is a diversified Sri Lankan-origin enterprise with deep-rooted expertise across industrial manufacturing, partner networks, and strategic supply solutions.
                         </p>
 
                         <div className="flex flex-col gap-2 text-sm text-white/80">

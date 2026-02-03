@@ -28,7 +28,7 @@ export default function AboutIntro() {
                             viewport={{ once: true }}
                         >
                             <h2 className="text-2xl md:text-4xl md:leading-tight font-medium text-slate-900 mb-8">
-                                A diversified industrial and supply-focused group headquartered in Sri Lanka, with manufacturing, sourcing, and operational presence across Asia.
+                                A diversified industrial and supply-focused group headquartered in Sri Lanka, with manufacturing, strategic partners, and operational presence in key global markets.
                             </h2>
 
                             <div className="text-lg text-slate-600 leading-relaxed space-y-6">

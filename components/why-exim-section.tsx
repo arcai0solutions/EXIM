@@ -8,7 +8,7 @@ const features = [
     {
         id: 1,
         title: 'Manufacturing Capabilities',
-        description: 'Multi-country sourcing and manufacturing capabilities',
+        description: 'Multi-country manufacturing and supply chain capabilities',
     },
     {
         id: 2,
@@ -53,7 +53,7 @@ export default function WhyEximSection() {
                             <div className="w-24 h-1.5 bg-amber-400 rounded-full mb-6 md:mb-8 shadow-sm mx-auto md:mx-0" />
 
                             <p className="text-base md:text-xl text-amber-50 leading-relaxed font-light drop-shadow-sm text-center md:text-justify">
-                                EXIM Corporation is the leading regional champion for trading and manufacturing in the Indian Ocean region. Benefits of working with us include:
+                                EXIM Corporation is the leading regional champion for trading and manufacturing in the international market. Benefits of working with us include:
                             </p>
                         </motion.div>
                     </div>

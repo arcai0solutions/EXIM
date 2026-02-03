@@ -6,7 +6,7 @@ const features = [
     {
         id: '01',
         title: 'Regional Footprint',
-        description: 'Manufacturing and sourcing presence across key Asian markets.'
+        description: 'Manufacturing and operational presence across key international markets.'
     },
     {
         id: '02',
@@ -53,9 +53,9 @@ export default function AboutWhyExim() {
                             transition={{ delay: idx * 0.1 }}
                             className="relative p-8 rounded-2xl bg-slate-50 border border-slate-100 group hover:shadow-lg transition-all duration-300"
                         >
-                            <span className="text-6xl font-bold text-amber-700/30 absolute top-4 right-6 group-hover:text-amber-500/50 transition-colors">
+                            {/* <span className="text-6xl font-bold text-amber-700/30 absolute top-4 right-6 group-hover:text-amber-500/50 transition-colors">
                                 {feature.id}
-                            </span>
+                            </span> */}
                             <div className="relative z-10 mt-4">
                                 <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-800 transition-colors">
                                     {feature.title}

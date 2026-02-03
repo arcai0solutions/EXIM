@@ -18,7 +18,7 @@ const services = [
     {
         title: 'Timber & Industrial Manufacturing',
         href: '/services/timber-industrial-manufacturing',
-        description: 'Sustainable sourcing, engineered processing, and export-ready production.',
+        description: 'Sustainable partners, engineered processing, and export-ready production.',
     },
     {
         title: 'Furniture Manufacturing & Supply',

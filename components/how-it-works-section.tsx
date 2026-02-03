@@ -85,7 +85,7 @@ export default function HowItWorksSection() {
                                     <h3 className="text-2xl font-medium text-slate-900 mb-3 min-h-[4rem] flex items-start">
                                         {step.title}
                                     </h3>
-                                    <p className="text-slate-600 leading-relaxed text-justify">
+                                    <p className="text-slate-600 leading-relaxed text-left">
                                         {step.description}
                                     </p>
                                 </div>
@@ -97,22 +97,20 @@ export default function HowItWorksSection() {
                     {steps.slice(3, 5).map((step, idx) => {
                         const Icon = step.icon;
                         return (
-                            <div key={idx + 3} className="md:col-span-3 bg-[#F7F2EA] rounded-[2rem] p-8 flex flex-col md:flex-row md:items-center gap-6 group hover:shadow-lg transition-all duration-300 border border-transparent hover:border-amber-100/50 relative overflow-hidden min-h-[220px]">
-                                <div className="absolute top-8 right-8">
+                            <div key={idx + 3} className="md:col-span-3 bg-[#F7F2EA] rounded-[2rem] p-8 flex flex-col group hover:shadow-lg transition-all duration-300 border border-transparent hover:border-amber-100/50 relative overflow-hidden min-h-[220px]">
+                                <div className="mb-8 flex justify-between items-start">
+                                    <div className="w-14 h-14 rounded-2xl bg-[#FDFBF7] flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
+                                        <Icon className="w-7 h-7 text-[#4A3728]" />
+                                    </div>
                                     <span className={`${instrumentSerif.className} text-3xl text-[#4A3728]`}>
                                         Step {idx + 4}
                                     </span>
                                 </div>
-                                <div className="flex-shrink-0">
-                                    <div className="w-14 h-14 rounded-2xl bg-[#FDFBF7] flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
-                                        <Icon className="w-7 h-7 text-[#4A3728]" />
-                                    </div>
-                                </div>
-                                <div className="flex-1 pr-8">
+                                <div className="flex-1">
                                     <h3 className="text-2xl font-medium text-slate-900 mb-2">
                                         {step.title}
                                     </h3>
-                                    <p className="text-slate-600 leading-relaxed text-justify">
+                                    <p className="text-slate-600 leading-relaxed text-left md:text-justify md:[text-align-last:left]">
                                         {step.description}
                                     </p>
                                 </div>

@@ -34,7 +34,7 @@ export default function FurniturePage() {
                     </div>
                     <div className="space-y-6 order-1 md:order-2">
                         <p className="text-lg text-slate-700 leading-relaxed">
-                            EXIM Corporation is a custom furniture supplier and contract furniture specialist, working with an extensive network of partner furniture manufacturers and factories across Asia and Oceania, including China, Sri Lanka, Vietnam, Indonesia, Myanmar, and New Zealand.
+                            EXIM Corporation is a custom furniture supplier and contract furniture specialist, working with an extensive network of partner furniture manufacturers and factories across international markets, including China, Sri Lanka, Vietnam, Indonesia, Myanmar, and New Zealand.
                         </p>
                         <p className="text-lg text-slate-700 leading-relaxed">
                             We deliver made-to-order furniture, solid wood furniture, and bespoke furniture solutions for hotels, resorts, luxury residences, commercial spaces, and office environments.

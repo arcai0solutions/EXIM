@@ -34,7 +34,7 @@ export default function ServiceLayout({ children }: { children: React.ReactNode 
                             { label: 'Oil & Gas', ariaLabel: 'Oil and gas services', link: '/services/oil-gas' },
                         ]
                     },
-                    { label: 'About', ariaLabel: 'Learn about us', link: '/#about' },
+                    { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
                     { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' }
                 ]}
                 socialItems={[

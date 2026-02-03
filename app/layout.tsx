@@ -8,20 +8,20 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
-    default: 'EXIM Corporation | Industrial Manufacturing & Global Sourcing',
+    default: 'EXIM Corporation | Industrial Manufacturing & Partner Networks',
     template: '%s | EXIM Corporation'
   },
-  description: 'EXIM Corporation (Pvt) Ltd is a diversified Sri Lankan enterprise specializing in industrial manufacturing, global sourcing, furniture supply, hospitality linen, and strategic supply solutions across the Indian Ocean region.',
+  description: 'EXIM Corporation (Pvt) Ltd is a diversified Sri Lankan enterprise specializing in industrial manufacturing, partner networks, furniture supply, hospitality linen, and strategic supply solutions for international markets.',
   keywords: [
     'EXIM Corporation',
     'Industrial Manufacturing Sri Lanka',
-    'Global Sourcing',
+    'Partner Networks',
     'Furniture Supply',
     'Hospitality Linen',
     'Oil and Gas Solutions',
     'Timber Manufacturing',
     'Strategic Supply Solutions',
-    'Indian Ocean Trade',
+    'International Trade',
     'Maldives',
     'Mauritius',
     'Seychelles',
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://eximcpl.com',
     siteName: 'EXIM Corporation',
-    title: 'EXIM Corporation | Industrial Manufacturing & Global Sourcing',
-    description: 'Expertise across industrial manufacturing, global sourcing, and strategic supply solutions for the Indian Ocean region.',
+    title: 'EXIM Corporation | Industrial Manufacturing & Partner Networks',
+    description: 'Expertise across industrial manufacturing, partner networks, and strategic supply solutions for global markets.',
     images: [
       {
         url: '/exim-logo.png',
@@ -62,8 +62,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'EXIM Corporation | Industrial Manufacturing & Global Sourcing',
-    description: 'Expertise across industrial manufacturing, global sourcing, and strategic supply solutions.',
+    title: 'EXIM Corporation | Industrial Manufacturing & Partner Networks',
+    description: 'Expertise across industrial manufacturing, partner networks, and strategic supply solutions.',
     images: ['/exim-logo.png'],
   },
   robots: {

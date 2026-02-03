@@ -13,7 +13,7 @@ export default function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    const text = 'Welcome to EXIM';
+    const text = 'EXIM Corporation';
     let currentIndex = 0;
     const typingInterval = setInterval(() => {
       if (currentIndex <= text.length) {
@@ -124,8 +124,8 @@ export default function HeroSection() {
           <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Regional Trading & Manufacturing Solutions
           </h2>
-          <p className="text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed text-justify">
-            Delivering timber, furniture, linen, hospitality supplies, outdoor architectural systems, and energy-linked trade with precision across Sri Lanka and the Indian Ocean region.
+          <p className="text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed text-left md:text-justify">
+            Delivering timber, furniture, linen, hospitality supplies, outdoor architectural systems, and energy-linked trade with precision across Sri Lanka and international markets.
           </p>
         </div>
       </div>

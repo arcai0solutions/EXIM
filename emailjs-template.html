@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Inquiry - EXIM Corporation</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f8fafc; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased;">
+  
+  <div style="max-width: 600px; margin: 40px auto; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+    
+    <!-- Header -->
+    <div style="background-color: #452412; padding: 40px 40px; text-align: center; background-image: linear-gradient(135deg, #452412 0%, #2a150a 100%);">
+      <h1 style="color: #ffffff; margin: 0; font-size: 24px; letter-spacing: 2px; text-transform: uppercase;">EXIM Corporation</h1>
+      <p style="color: #fbbf24; margin: 10px 0 0 0; font-size: 14px; letter-spacing: 1px; text-transform: uppercase;">Inquiry Received</p>
+    </div>
+
+    <!-- Content -->
+    <div style="padding: 40px;">
+      <p style="color: #64748b; font-size: 16px; margin-bottom: 30px;">
+        You have received a new inquiry from the website contact form.
+      </p>
+
+      <table style="width: 100%; border-collapse: collapse;">
+        <tr>
+          <td style="padding: 15px 0; border-bottom: 1px solid #f1f5f9; color: #94a3b8; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; width: 140px;">Client Name</td>
+          <td style="padding: 15px 0; border-bottom: 1px solid #f1f5f9; color: #1e293b; font-size: 16px; font-weight: 500;">{{first_name}} {{last_name}}</td>
+        </tr>
+        <tr>
+          <td style="padding: 15px 0; border-bottom: 1px solid #f1f5f9; color: #94a3b8; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Email</td>
+          <td style="padding: 15px 0; border-bottom: 1px solid #f1f5f9; color: #1e293b; font-size: 16px; font-weight: 500;">
+            <a href="mailto:{{email}}" style="color: #d97706; text-decoration: none;">{{email}}</a>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 15px 0; border-bottom: 1px solid #f1f5f9; color: #94a3b8; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Phone</td>
+          <td style="padding: 15px 0; border-bottom: 1px solid #f1f5f9; color: #1e293b; font-size: 16px; font-weight: 500;">
+            <a href="tel:{{phone}}" style="color: #1e293b; text-decoration: none;">{{phone}}</a>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 15px 0; border-bottom: 1px solid #f1f5f9; color: #94a3b8; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Service</td>
+          <td style="padding: 15px 0; border-bottom: 1px solid #f1f5f9; color: #1e293b; font-size: 16px; font-weight: 500; color: #d97706;">{{service}}</td>
+        </tr>
+      </table>
+
+      <div style="margin-top: 30px;">
+        <p style="color: #94a3b8; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Message</p>
+        <div style="background-color: #f8fafc; padding: 20px; border-radius: 8px; color: #334155; line-height: 1.6; font-size: 16px; border-left: 4px solid #d97706;">
+          {{message}}
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #f8fafc; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
+      <p style="color: #94a3b8; font-size: 12px; margin: 0;">&copy; 2026 EXIM Corporation. All rights reserved.</p>
+    </div>
+
+  </div>
+</body>
+</html>

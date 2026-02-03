@@ -9,7 +9,7 @@ const services = [
     {
         id: '001',
         title: 'Timber & Industrial Manufacturing',
-        description: 'Sustainable sourcing and engineered timber solutions, including New Zealand pine and Southeast Asian hardwoods, supported by export-oriented manufacturing in Vietnam.',
+        description: 'Sustainable harvesting and engineered timber solutions, including New Zealand pine and certified premium hardwoods, supported by export-oriented manufacturing in Vietnam.',
         link: '/services/timber-industrial-manufacturing',
         images: [
             'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop',

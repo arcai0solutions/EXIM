@@ -58,7 +58,7 @@ export function OrganizationStructuredData() {
             "https://www.linkedin.com/company/exim-corporation1",
             "https://www.instagram.com/exim_corporation/"
         ],
-        "description": "Diversified Sri Lankan enterprise specializing in industrial manufacturing, global sourcing, and strategic supply solutions across the Indian Ocean region.",
+        "description": "Diversified Sri Lankan enterprise specializing in industrial manufacturing, partner networks, and strategic supply solutions for international and global markets.",
     };
 
     return (

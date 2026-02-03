@@ -63,7 +63,7 @@ export default function CTASection() {
 
                         <p className="text-lg md:text-xl text-amber-50 max-w-xl leading-relaxed mb-8 font-light drop-shadow-sm text-justify">
                             Whether you need timber, furniture, hospitality supplies, or industrial solutions —
-                            our expert team is ready to deliver excellence across the Indian Ocean region.
+                            our expert team is ready to deliver excellence internationally.
                         </p>
 
                         {/* Quick Contact Info */}

@@ -8,12 +8,14 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Facebook, Linkedin, Instagram, Send, Loader2 } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 import { toast } from 'sonner';
+import emailjs from '@emailjs/browser';
 
 export default function ContactContent() {
     const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
+        email: '',
         phone: '',
         service: '',
         message: ''
@@ -28,26 +30,37 @@ export default function ContactContent() {
         setLoading(true);
 
         try {
-            const { error } = await supabase.from('inquiries').insert([
+            // 1. Send Email via EmailJS
+            const emailResult = await emailjs.send(
+                'service_h4gd83g',   // Service ID
+                'template_a19lxv9',  // Template ID
+                {
+                    first_name: formData.firstName,
+                    last_name: formData.lastName,
+                    email: formData.email,
+                    phone: formData.phone,
+                    service: formData.service,
+                    message: formData.message,
+                },
+                'QqYjE0Czo3ljaA5WD'  // Public Key
+            );
+
+            if (emailResult.status !== 200) {
+                throw new Error('Failed to send email notification');
+            }
+
+            // 2. Save to Supabase
+            const { error: supabaseError } = await supabase.from('inquiries').insert([
                 {
                     name: `${formData.firstName} ${formData.lastName}`.trim(),
-                    email: 'info@eximcpl.com', // Creating an inquiry usually comes with an email, but the form field is missing in the design? 
-                    // Wait, I checked the previous code, there was NO EMAIL FIELD in the form! 
-                    // There is First Name, Last Name, Phone, Service, Message.
-                    // The "Email" section on the left is company email.
-                    // I MUST ADD AN EMAIL FIELD to the form.
+                    email: formData.email,
                     phone: formData.phone,
                     message: `Service Interest: ${formData.service}\n\n${formData.message}`,
                     status: 'new'
                 }
             ]);
 
-            // Wait, looking at the previous file content (Step 59):
-            // It has First Name, Last Name, Phone, Service, Message.
-            // It DOES NOT have an email input field for the user.
-            // I should add an Email input field. It's critical.
-
-            if (error) throw error;
+            if (supabaseError) throw supabaseError;
 
             toast.success("Message sent successfully!", {
                 description: "We'll get back to you shortly."
@@ -56,6 +69,7 @@ export default function ContactContent() {
             setFormData({
                 firstName: '',
                 lastName: '',
+                email: '',
                 phone: '',
                 service: '',
                 message: ''
@@ -200,10 +214,7 @@ export default function ContactContent() {
                                         <label htmlFor="email" className="text-xs font-bold text-slate-400 ml-1 uppercase tracking-wider">Email Address</label>
                                         <input
                                             type="email" id="email"
-                                            // Handling email separately in state would vary, but let's just use a local var or change state structure?
-                                            // Ah, I missed 'email' in formData initial state. I'll add it there in the real file, but passing just 'email' to supabase helper needs it.
-                                            // I'll add 'email' field to formData in the implementation.
-                                            onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                                            value={formData.email} onChange={handleChange}
                                             className="w-full px-5 py-3 md:py-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all outline-none text-slate-800 placeholder:text-slate-400 font-medium"
                                             placeholder="john@example.com" required
                                         />

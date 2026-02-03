@@ -24,7 +24,7 @@ export default function AboutMissionVision() {
                             </div>
                             <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Mission</h2>
                             <p className="text-lg text-slate-600 leading-relaxed font-light">
-                                To bridge the gap between regional manufacturing excellence and global demand. We strive to deliver sustainable, high-quality industrial and supply solutions that empower businesses and communities across Asia and beyond.
+                                To bridge the gap between regional manufacturing excellence and global demand. We strive to deliver sustainable, high-quality industrial and supply solutions that empower businesses and communities worldwide.
                             </p>
                         </div>
                         {/* Decorative background element */}
@@ -51,7 +51,7 @@ export default function AboutMissionVision() {
                             </div>
                             <h2 className="text-3xl font-bold text-white mb-6">Our Vision</h2>
                             <p className="text-lg text-slate-300 leading-relaxed font-light">
-                                To be the most trusted industrial and supply partner in the Indian Ocean region, recognized for our commitment to quality, innovation, and compliant cross-border trade.
+                                To be the most trusted industrial and supply partner in the international market, recognized for our commitment to quality, innovation, and compliant cross-border trade.
                             </p>
                         </div>
                     </motion.div>
