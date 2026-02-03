@@ -1,7 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { SiteFooter } from '@/components/site-footer';
+import { FooterWrapper } from '@/components/footer-wrapper';
+import { OrganizationStructuredData } from '@/components/structured-data';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -11,7 +12,25 @@ export const metadata: Metadata = {
     template: '%s | EXIM Corporation'
   },
   description: 'EXIM Corporation (Pvt) Ltd is a diversified Sri Lankan enterprise specializing in industrial manufacturing, global sourcing, furniture supply, hospitality linen, and strategic supply solutions across the Indian Ocean region.',
-  keywords: ['EXIM Corporation', 'Industrial Manufacturing Sri Lanka', 'Global Sourcing', 'Furniture Supply', 'Hospitality Linen', 'Oil and Gas Solutions', 'Timber Manufacturing', 'Strategic Supply Solutions', 'Indian Ocean Trade'],
+  keywords: [
+    'EXIM Corporation',
+    'Industrial Manufacturing Sri Lanka',
+    'Global Sourcing',
+    'Furniture Supply',
+    'Hospitality Linen',
+    'Oil and Gas Solutions',
+    'Timber Manufacturing',
+    'Strategic Supply Solutions',
+    'Indian Ocean Trade',
+    'Maldives',
+    'Mauritius',
+    'Seychelles',
+    'Sri Lanka',
+    'Middle East',
+    'Saudi',
+    'UAE',
+    'Israel'
+  ],
   authors: [{ name: 'EXIM Corporation' }],
   creator: 'EXIM Corporation',
   publisher: 'EXIM Corporation',
@@ -19,6 +38,11 @@ export const metadata: Metadata = {
     email: false,
     address: false,
     telephone: false,
+  },
+  icons: {
+    icon: '/exim-favicon.png',
+    shortcut: '/exim-favicon.png',
+    apple: '/exim-favicon.png',
   },
   openGraph: {
     type: 'website',
@@ -63,8 +87,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <OrganizationStructuredData />
         {children}
-        <SiteFooter />
+        <FooterWrapper />
       </body>
     </html>
   );

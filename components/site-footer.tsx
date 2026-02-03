@@ -79,16 +79,13 @@ export function SiteFooter() {
                         <div className="flex flex-col gap-4">
                             <h3 className="text-lg font-semibold text-white">Socials</h3>
                             <div className="flex gap-4">
-                                <Link href="https://fb.com" target="_blank" className="w-12 h-12 rounded-full bg-[#EFEBE9] flex items-center justify-center text-[#3E2723] hover:bg-[#FFB300] hover:text-[#3E2723] transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-md group">
+                                <Link href="https://web.facebook.com/profile.php?id=61587158443685" target="_blank" className="w-12 h-12 rounded-full bg-[#EFEBE9] flex items-center justify-center text-[#3E2723] hover:bg-[#FFB300] hover:text-[#3E2723] transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-md group">
                                     <Facebook className="w-6 h-6" />
                                 </Link>
-                                <Link href="https://linkedin.com" target="_blank" className="w-12 h-12 rounded-full bg-[#EFEBE9] flex items-center justify-center text-[#3E2723] hover:bg-[#FFB300] hover:text-[#3E2723] transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-md group">
+                                <Link href="https://www.linkedin.com/company/exim-corporation1" target="_blank" className="w-12 h-12 rounded-full bg-[#EFEBE9] flex items-center justify-center text-[#3E2723] hover:bg-[#FFB300] hover:text-[#3E2723] transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-md group">
                                     <Linkedin className="w-6 h-6" />
                                 </Link>
-                                <Link href="https://twitter.com" target="_blank" className="w-12 h-12 rounded-full bg-[#EFEBE9] flex items-center justify-center text-[#3E2723] hover:bg-[#FFB300] hover:text-[#3E2723] transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-md group">
-                                    <Twitter className="w-6 h-6" />
-                                </Link>
-                                <Link href="https://instagram.com" target="_blank" className="w-12 h-12 rounded-full bg-[#EFEBE9] flex items-center justify-center text-[#3E2723] hover:bg-[#FFB300] hover:text-[#3E2723] transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-md group">
+                                <Link href="https://www.instagram.com/exim_corporation/" target="_blank" className="w-12 h-12 rounded-full bg-[#EFEBE9] flex items-center justify-center text-[#3E2723] hover:bg-[#FFB300] hover:text-[#3E2723] transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-md group">
                                     <Instagram className="w-6 h-6" />
                                 </Link>
                             </div>
@@ -102,14 +99,14 @@ export function SiteFooter() {
                     <div className="flex items-center gap-4">
                         <div className="flex items-center gap-2">
                             <span>Made by</span>
-                            <img 
-                                src="/arc logo.png" 
-                                alt="ARC AI Logo" 
+                            <img
+                                src="/arc logo.png"
+                                alt="ARC AI Logo"
                                 className="h-8 w-auto object-contain"
                             />
                         </div>
                         <span className="hidden h-1 w-1 rounded-full bg-white/20 sm:block" />
-                        <Link href="/login" className="hover:text-amber-400 transition-colors">Admin Login</Link>
+                        <Link href="/admin/login" className="hover:text-amber-400 transition-colors">Admin Login</Link>
                     </div>
                 </div>
             </div>

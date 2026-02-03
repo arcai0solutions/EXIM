@@ -45,6 +45,20 @@ export default function HeroSection() {
     return () => clearInterval(timer);
   }, []);
 
+  /* Scroll Lock Logic */
+  useEffect(() => {
+    if (!showContent) {
+      document.body.style.overflow = 'hidden';
+      // Also ensure html is locked if needed, but usually body is enough
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [showContent]);
+
   /* Scroll Listener */
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -138,9 +152,9 @@ export default function HeroSection() {
             { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' }
           ]}
           socialItems={[
-            { label: 'Facebook', link: '#' },
-            { label: 'LinkedIn', link: '#' },
-            { label: 'Instagram', link: '#' }
+            { label: 'Facebook', link: 'https://web.facebook.com/profile.php?id=61587158443685' },
+            { label: 'LinkedIn', link: 'https://www.linkedin.com/company/exim-corporation1' },
+            { label: 'Instagram', link: 'https://www.instagram.com/exim_corporation/' }
           ]}
           displaySocials
           displayItemNumbering={false}

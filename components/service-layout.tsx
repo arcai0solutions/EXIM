@@ -38,9 +38,9 @@ export default function ServiceLayout({ children }: { children: React.ReactNode 
                     { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' }
                 ]}
                 socialItems={[
-                    { label: 'Facebook', link: '#' },
-                    { label: 'LinkedIn', link: '#' },
-                    { label: 'Instagram', link: '#' }
+                    { label: 'Facebook', link: 'https://web.facebook.com/profile.php?id=61587158443685' },
+                    { label: 'LinkedIn', link: 'https://www.linkedin.com/company/exim-corporation1' },
+                    { label: 'Instagram', link: 'https://www.instagram.com/exim_corporation/' }
                 ]}
                 displaySocials
                 displayItemNumbering={true}
