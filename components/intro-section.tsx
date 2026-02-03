@@ -29,11 +29,11 @@ export default function IntroSection() {
                             transition={{ duration: 0.6, delay: 0.1 }}
                             viewport={{ once: true }}
                         >
-                            <div className="text-2xl md:text-4xl md:leading-tight font-medium text-slate-900 mb-8 text-justify">
+                            <div className="text-2xl md:text-4xl md:leading-tight font-medium text-slate-900 mb-8 text-left md:text-justify">
                                 EXIM Corporation (Pvt) Ltd is a diversified Sri Lankan-origin enterprise with deep-rooted expertise across industrial manufacturing, partner networks, and strategic supply solutions.
                             </div>
 
-                            <p className="text-lg text-slate-600 leading-relaxed mb-12 max-w-3xl text-justify">
+                            <p className="text-lg text-slate-600 leading-relaxed mb-12 max-w-3xl text-left md:text-justify">
                                 Since 2018, the Group has evolved into a multi-sector organization supporting infrastructure, hospitality, industrial development, and energy-related initiatives globally and selected international markets. Our operations are structured around key divisions that reflect long-term demand, asset-backed capabilities, and cross-border trade strength.
                             </p>
 
