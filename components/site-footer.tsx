@@ -55,7 +55,7 @@ export function SiteFooter() {
                         <div className="flex flex-col gap-4">
                             <h3 className="text-lg font-semibold text-white">Pages</h3>
                             <div className="flex flex-col gap-3">
-                                <Link href="/#home" className="text-sm font-medium text-white/90 hover:text-white hover:underline">Home</Link>
+                                <Link href="/" className="text-sm font-medium text-white/90 hover:text-white hover:underline">Home</Link>
                                 <Link href="/about" className="text-sm font-medium text-white/90 hover:text-white hover:underline">About</Link>
                                 <Link href="/#services" className="text-sm font-medium text-white/90 hover:text-white hover:underline">Services</Link>
                                 <Link href="/contact" className="text-sm font-medium text-white/90 hover:text-white hover:underline">Contact</Link>
@@ -100,9 +100,16 @@ export function SiteFooter() {
                 <div className="relative z-10 mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/60 sm:flex-row">
                     <p>© {new Date().getFullYear()} EXIM Corporation. All rights Reserved</p>
                     <div className="flex items-center gap-4">
-                        <p>Made by ARC AI</p>
+                        <div className="flex items-center gap-2">
+                            <span>Made by</span>
+                            <img 
+                                src="/arc logo.png" 
+                                alt="ARC AI Logo" 
+                                className="h-8 w-auto object-contain"
+                            />
+                        </div>
                         <span className="hidden h-1 w-1 rounded-full bg-white/20 sm:block" />
-                        <p>Powered by Nextjs</p>
+                        <Link href="/login" className="hover:text-amber-400 transition-colors">Admin Login</Link>
                     </div>
                 </div>
             </div>

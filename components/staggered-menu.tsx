@@ -485,12 +485,12 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                             >
                                 <span
                                     ref={textWrapRef}
-                                    className="sm-toggle-textWrap relative inline-block h-[1em] overflow-hidden whitespace-nowrap w-[var(--sm-toggle-width,auto)] min-w-[var(--sm-toggle-width,auto)]"
+                                    className="sm-toggle-textWrap relative inline-block h-[1.5em] overflow-hidden whitespace-nowrap w-[var(--sm-toggle-width,auto)] min-w-[var(--sm-toggle-width,auto)] text-xl"
                                     aria-hidden="true"
                                 >
                                     <span ref={textInnerRef} className="sm-toggle-textInner flex flex-col leading-none">
                                         {textLines.map((l, i) => (
-                                            <span className="sm-toggle-line block h-[1em] leading-none font-bold text-xl" key={i}>
+                                            <span className="sm-toggle-line flex items-center justify-center h-[1.5em] leading-none font-bold" key={i}>
                                                 {l}
                                             </span>
                                         ))}
@@ -525,7 +525,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                 >
                     <div className="sm-panel-inner flex-1 flex flex-col gap-5">
                         <ul
-                            className="sm-panel-list list-none m-0 p-0 flex flex-col gap-2"
+                            className="sm-panel-list list-none m-0 p-0 flex flex-col gap-10"
                             role="list"
                             data-numbering={displayItemNumbering || undefined}
                         >

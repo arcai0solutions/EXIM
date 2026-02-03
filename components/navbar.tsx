@@ -88,7 +88,7 @@ export function Navbar({ isScrolled = true, showContent = true }: NavbarProps) {
                     <NavigationMenu>
                         <NavigationMenuList>
                             <NavigationMenuItem>
-                                <Link href="/#home" legacyBehavior passHref>
+                                <Link href="/" legacyBehavior passHref>
                                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent hover:bg-slate-100/50 uppercase tracking-wide text-xs font-bold text-slate-800")}>
                                         Home
                                     </NavigationMenuLink>

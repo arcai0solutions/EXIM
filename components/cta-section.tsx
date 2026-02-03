@@ -61,7 +61,7 @@ export default function CTASection() {
                             Together
                         </h2>
 
-                        <p className="text-lg md:text-xl text-amber-50 max-w-xl leading-relaxed mb-8 font-light drop-shadow-sm">
+                        <p className="text-lg md:text-xl text-amber-50 max-w-xl leading-relaxed mb-8 font-light drop-shadow-sm text-justify">
                             Whether you need timber, furniture, hospitality supplies, or industrial solutions —
                             our expert team is ready to deliver excellence across the Indian Ocean region.
                         </p>
@@ -118,32 +118,7 @@ export default function CTASection() {
                             <ArrowRight className="w-5 h-5 text-amber-400 group-hover:translate-x-1 transition-transform" />
                         </Link>
 
-                        {/* Trust Badge */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 0.5 }}
-                            viewport={{ once: true }}
-                            className="flex items-center justify-center gap-4 pt-4"
-                        >
-                            <div className="flex -space-x-2">
-                                {[1, 2, 3, 4].map((i) => (
-                                    <div
-                                        key={i}
-                                        className="w-8 h-8 rounded-full bg-amber-800 border-2 border-amber-950 flex items-center justify-center relative overflow-hidden"
-                                    >
-                                        <div className="absolute inset-0 bg-[url('/wood-pattern.png')] bg-cover bg-center opacity-50 mix-blend-overlay" />
-                                        <span className="text-xs font-bold text-amber-100 relative z-10">
-                                            {['M', 'S', 'R', 'I'][i - 1]}
-                                        </span>
-                                    </div>
-                                ))}
-                            </div>
-                            <div className="text-left">
-                                <p className="text-sm font-medium text-white">Trusted by 50+ Partners</p>
-                                <p className="text-xs text-amber-200/70">Across the Indian Ocean Region</p>
-                            </div>
-                        </motion.div>
+
                     </motion.div>
                 </div>
             </div>

@@ -15,9 +15,9 @@ export default function IntroSection() {
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="text-sm font-medium text-slate-500 tracking-wide block mb-8 md:mb-0"
+                            className="text-3xl font-bold text-slate-900 tracking-wide block mb-8 md:mb-0 uppercase"
                         >
-                            Introduction
+                            About Us
                         </motion.span>
                     </div>
 
@@ -29,12 +29,12 @@ export default function IntroSection() {
                             transition={{ duration: 0.6, delay: 0.1 }}
                             viewport={{ once: true }}
                         >
-                            <div className="text-2xl md:text-4xl md:leading-tight font-medium text-slate-900 mb-8">
+                            <div className="text-2xl md:text-4xl md:leading-tight font-medium text-slate-900 mb-8 text-justify">
                                 EXIM Corporation (Pvt) Ltd is a diversified Sri Lankan-origin enterprise with deep-rooted expertise across industrial manufacturing, global sourcing, and strategic supply solutions.
                             </div>
 
-                            <p className="text-lg text-slate-600 leading-relaxed mb-12 max-w-3xl">
-                                Since 1979, the Group has evolved into a multi-sector organization supporting infrastructure, hospitality, industrial development, and energy-related initiatives across Asia and selected international markets. Our operations are structured around five principal verticals that reflect long-term demand, asset-backed capabilities, and cross-border trade strength.
+                            <p className="text-lg text-slate-600 leading-relaxed mb-12 max-w-3xl text-justify">
+                                Since 2018, the Group has evolved into a multi-sector organization supporting infrastructure, hospitality, industrial development, and energy-related initiatives across Asia and selected international markets. Our operations are structured around five principal verticals that reflect long-term demand, asset-backed capabilities, and cross-border trade strength.
                             </p>
 
                             <Link

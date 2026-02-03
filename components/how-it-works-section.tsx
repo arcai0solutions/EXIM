@@ -57,12 +57,6 @@ export default function HowItWorksSection() {
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-20">
-                    <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-slate-50 border border-slate-200/60">
-                        <span className="text-sm font-medium text-slate-600 tracking-wide uppercase">
-                            How we work
-                        </span>
-                    </div>
-
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-slate-900 leading-[1.1] tracking-tight">
                         We like to keep things{' '}
                         <span className={`${instrumentSerif.className} text-amber-700`}>
@@ -84,14 +78,14 @@ export default function HowItWorksSection() {
                                         <Icon className="w-7 h-7 text-[#4A3728]" />
                                     </div>
                                     <span className={`${instrumentSerif.className} text-3xl text-[#4A3728]`}>
-                                        0{idx + 1}
+                                        Step {idx + 1}
                                     </span>
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-medium text-slate-900 mb-3 min-h-[4rem] flex items-start">
                                         {step.title}
                                     </h3>
-                                    <p className="text-slate-600 leading-relaxed">
+                                    <p className="text-slate-600 leading-relaxed text-justify">
                                         {step.description}
                                     </p>
                                 </div>
@@ -106,7 +100,7 @@ export default function HowItWorksSection() {
                             <div key={idx + 3} className="md:col-span-3 bg-[#F7F2EA] rounded-[2rem] p-8 flex flex-col md:flex-row md:items-center gap-6 group hover:shadow-lg transition-all duration-300 border border-transparent hover:border-amber-100/50 relative overflow-hidden min-h-[220px]">
                                 <div className="absolute top-8 right-8">
                                     <span className={`${instrumentSerif.className} text-3xl text-[#4A3728]`}>
-                                        0{idx + 4}
+                                        Step {idx + 4}
                                     </span>
                                 </div>
                                 <div className="flex-shrink-0">
@@ -118,7 +112,7 @@ export default function HowItWorksSection() {
                                     <h3 className="text-2xl font-medium text-slate-900 mb-2">
                                         {step.title}
                                     </h3>
-                                    <p className="text-slate-600 leading-relaxed">
+                                    <p className="text-slate-600 leading-relaxed text-justify">
                                         {step.description}
                                     </p>
                                 </div>

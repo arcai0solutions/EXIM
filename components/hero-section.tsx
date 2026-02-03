@@ -9,10 +9,25 @@ export default function HeroSection() {
   const [isLoading, setIsLoading] = useState(true);
   const [progress, setProgress] = useState(0);
   const [showContent, setShowContent] = useState(false);
+  const [displayText, setDisplayText] = useState('');
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    const duration = 1500; // 1.5 seconds
+    const text = 'Welcome to EXIM';
+    let currentIndex = 0;
+    const typingInterval = setInterval(() => {
+      if (currentIndex <= text.length) {
+        setDisplayText(text.slice(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 100);
+    return () => clearInterval(typingInterval);
+  }, []);
+
+  useEffect(() => {
+    const duration = 2000; // 2 seconds
     const interval = 15; // update every 15ms
     const step = 100 / (duration / interval);
 
@@ -51,15 +66,15 @@ export default function HeroSection() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-amber-50 to-slate-100 p-2">
       {isLoading && (
-        <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-slate-50 gap-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-amber-900 tracking-wider animate-pulse">
-            WELCOME
-          </h1>
-          <div className="w-64 h-1 bg-amber-200/50 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-amber-700 transition-all duration-75 ease-linear"
-              style={{ width: `${progress}%` }}
-            />
+        <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-slate-50 gap-6">
+          <div className="flex flex-col items-center text-center gap-4">
+            <h1 className="text-4xl md:text-6xl font-bold text-amber-900 tracking-wider min-h-[1.5em] flex items-center justify-center">
+              {displayText}
+              <span className="animate-pulse text-amber-600 ml-1">|</span>
+            </h1>
+            <p className="text-sm md:text-lg text-amber-800/60 font-medium tracking-[0.2em] animate-in fade-in duration-1000 slide-in-from-bottom-2 uppercase">
+              Terra | Ignis | Ventus | Aqua
+            </p>
           </div>
         </div>
       )}
@@ -95,7 +110,7 @@ export default function HeroSection() {
           <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Regional Trading & Manufacturing Solutions
           </h2>
-          <p className="text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed">
+          <p className="text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed text-justify">
             Delivering timber, furniture, linen, hospitality supplies, outdoor architectural systems, and energy-linked trade with precision across Sri Lanka and the Indian Ocean region.
           </p>
         </div>
@@ -106,7 +121,7 @@ export default function HeroSection() {
         <StaggeredMenu
           position="right"
           items={[
-            { label: 'Home', ariaLabel: 'Go to home page', link: '/#home' },
+            { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
             { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
             {
               label: 'Services',
@@ -128,7 +143,7 @@ export default function HeroSection() {
             { label: 'Instagram', link: '#' }
           ]}
           displaySocials
-          displayItemNumbering={true}
+          displayItemNumbering={false}
           menuButtonColor="#000000"
           openMenuButtonColor="#FFFFFF"
           changeMenuColorOnOpen={true}
