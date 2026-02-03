@@ -137,7 +137,8 @@ export default function ContactContent() {
                                             <h3 className="font-semibold text-lg text-amber-100 mb-1">Head Office</h3>
                                             <p className="text-sm text-white/70 leading-relaxed">
                                                 EXIM Corporation (Pvt) Ltd<br />
-                                                Colombo, Sri Lanka
+                                                419, 3/1 Galle Road,<br />
+                                                Colombo 00300, Sri Lanka
                                             </p>
                                         </div>
                                     </div>
@@ -165,7 +166,7 @@ export default function ContactContent() {
                                                     +94 117 871 571
                                                 </a>
                                                 <a href="tel:+94772443778" className="text-sm text-white/70 hover:text-white transition-colors">
-                                                    +94 772 443 778 (Mobile)
+                                                    +94 772 443 778 (WhatsApp)
                                                 </a>
                                             </div>
                                         </div>
@@ -225,7 +226,7 @@ export default function ContactContent() {
                                             type="tel" id="phone"
                                             value={formData.phone} onChange={handleChange}
                                             className="w-full px-5 py-3 md:py-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all outline-none text-slate-800 placeholder:text-slate-400 font-medium"
-                                            placeholder="+94 77..." required
+                                            placeholder="+1 ..." required
                                         />
                                     </div>
                                 </div>
