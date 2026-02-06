@@ -27,13 +27,22 @@ export default function OutdoorPage() {
                 </section>
 
                 {/* Introduction */}
-                <section className="max-w-4xl mx-auto text-lg text-slate-700 leading-relaxed space-y-6 text-center">
-                    <p>
-                        EXIM Corporation delivers commercial outdoor furniture, architectural shade systems, and weather-resistant outdoor solutions through specialist partner manufacturers in Europe and China.
-                    </p>
-                    <p>
-                        Our outdoor solutions are designed for tropical climates, coastal environments, and high-exposure commercial settings, making them ideal for resorts, hotels, villas, and outdoor hospitality spaces.
-                    </p>
+                <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl">
+                        <img
+                            src="/outdor-serive.webp"
+                            alt="Outdoor Furniture Solutions"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
+                    <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
+                        <p>
+                            EXIM Corporation delivers commercial outdoor furniture, architectural shade systems, and weather-resistant outdoor solutions through specialist partner manufacturers in Europe and China.
+                        </p>
+                        <p>
+                            Our outdoor solutions are designed for tropical climates, coastal environments, and high-exposure commercial settings, making them ideal for resorts, hotels, villas, and outdoor hospitality spaces.
+                        </p>
+                    </div>
                 </section>
 
                 {/* Product Range */}

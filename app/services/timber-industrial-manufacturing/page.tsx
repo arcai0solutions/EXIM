@@ -25,16 +25,25 @@ export default function TimberPage() {
                 </section>
 
                 {/* Introduction */}
-                <section className="max-w-4xl mx-auto space-y-6 text-lg text-slate-700 leading-relaxed">
-                    <p>
-                        EXIM Corporation provides commercial timber solutions, industrial wood products, and furniture-grade timber through a global network of verified partner suppliers and timber production houses.
-                    </p>
-                    <p>
-                        We work closely with partner suppliers across Sri Lanka, Vietnam, Myanmar, Indonesia, New Zealand, and China, supplying sustainably sourced hardwoods and softwoods for hospitality projects, commercial construction, furniture manufacturing, and industrial applications.
-                    </p>
-                    <p>
-                        Our partner-supplied timber solutions include kiln-dried wood, precision-cut lumber, and custom timber specifications engineered for durability, stability, and long-term performance.
-                    </p>
+                <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl">
+                        <img
+                            src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop"
+                            alt="Timber Manufacturing"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
+                    <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
+                        <p>
+                            EXIM Corporation provides commercial timber solutions, industrial wood products, and furniture-grade timber through a global network of verified partner suppliers and timber production houses.
+                        </p>
+                        <p>
+                            We work closely with partner suppliers across Sri Lanka, Vietnam, Myanmar, Indonesia, New Zealand, and China, supplying sustainably sourced hardwoods and softwoods for hospitality projects, commercial construction, furniture manufacturing, and industrial applications.
+                        </p>
+                        <p>
+                            Our partner-supplied timber solutions include kiln-dried wood, precision-cut lumber, and custom timber specifications engineered for durability, stability, and long-term performance.
+                        </p>
+                    </div>
                 </section>
 
                 {/* Conclusion */}

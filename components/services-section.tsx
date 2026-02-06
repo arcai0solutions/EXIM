@@ -13,7 +13,7 @@ const services = [
         link: '/services/timber-industrial-manufacturing',
         images: [
             'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1518112390430-f4ab02e9c2c8?q=80&w=800&auto=format&fit=crop'
+            '/timber.webp'
         ]
     },
     {
@@ -23,7 +23,7 @@ const services = [
         link: '/services/furniture-manufacturing-supply',
         images: [
             'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?q=80&w=800&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=800&auto=format&fit=crop'
+            '/outdoor.webp'
         ]
     },
     {
@@ -32,8 +32,8 @@ const services = [
         description: 'Manufacture and supply of bed linen, bath linen, towels, duvets, pillows, and feather products for hotels, resorts, and serviced residences.',
         link: '/services/hospitality-linen-resort-supplies',
         images: [
-            'https://images.unsplash.com/photo-1627387346124-b154a4ba1e4d?q=80&w=800&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1520333789090-1afc82db536a?q=80&w=800&auto=format&fit=crop'
+            '/linen1.webp',
+            '/linen2.webp'
         ]
     },
     {
@@ -42,8 +42,8 @@ const services = [
         description: 'Retractable systems, shading structures, and weather-resilient outdoor installations designed for tropical and commercial environments.',
         link: '/services/outdoor-architectural-solutions',
         images: [
-            'https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=800&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=800&auto=format&fit=crop'
+            '/out1.webp',
+            '/out2.webp'
         ]
     },
     {
@@ -52,8 +52,8 @@ const services = [
         description: 'Structured trading and supply support for petroleum and energy-related products, managed with strict compliance and risk discipline.',
         link: '/services/oil-gas',
         images: [
-            'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1516937941344-00b4e0337589?q=80&w=800&auto=format&fit=crop'
+            '/oil.webp',
+            '/oil2.webp'
         ]
     },
 ];
