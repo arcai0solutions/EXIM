@@ -13,6 +13,12 @@ export default function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 1.5;
+    }
+  }, []);
+
+  useEffect(() => {
     const text = 'EXIM Corporation';
     let currentIndex = 0;
     const typingInterval = setInterval(() => {

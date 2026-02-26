@@ -98,14 +98,20 @@ export function SiteFooter() {
                     <p>© {new Date().getFullYear()} EXIM Corporation. All rights Reserved</p>
                     <div className="flex items-center gap-4">
                         <div className="flex items-center gap-2">
-                            <span>Made by</span>
-                            <a href="https://www.arcai.agency" target="_blank" rel="noopener noreferrer">
-                                <img
-                                    src="/arc logo.png"
-                                    alt="ARC AI Logo"
-                                    className="h-8 w-auto object-contain hover:opacity-80 transition-opacity"
+                             <a
+                                href="https://www.arcai.agency"
+                                target="_blank"
+                                rel="noopener"
+                                title="ARC AI - Web Design & Digital Solutions"
+                                className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                             >
+                                <span>Designed & Developed by</span>
+                                <img 
+                                    src="/arc-logo.png" 
+                                    alt="ARC AI - Web Design & Digital Solutions" 
+                                    className="h-8 w-auto object-contain"
                                 />
-                            </a>
+                             </a>
                         </div>
                     </div>
                 </div>
